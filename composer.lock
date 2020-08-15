@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d0c0458cd7bf0aa562d0e4f09f6d9d59",
+    "content-hash": "bce8deaf64d1b7d5ee6ad8ff5a665f8c",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1289,6 +1289,51 @@
                 }
             ],
             "time": "2020-07-23T08:41:23+00:00"
+        },
+        {
+            "name": "nbj/cockroachdb-laravel",
+            "version": "0.0.6-alpha",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nbj/cockroachdb-laravel.git",
+                "reference": "02f3239ca87dd1ee5aecf1eb8b0ddbd5819ffb09"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nbj/cockroachdb-laravel/zipball/02f3239ca87dd1ee5aecf1eb8b0ddbd5819ffb09",
+                "reference": "02f3239ca87dd1ee5aecf1eb8b0ddbd5819ffb09",
+                "shasum": ""
+            },
+            "type": "package",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Nbj\\Cockroach\\CockroachServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Nbj\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nikolaj Boel Jensen",
+                    "email": "nbj@cego.dk"
+                }
+            ],
+            "description": "CockroachDB driver for Laravel 5.6",
+            "keywords": [
+                "cockroach",
+                "cockroachdb",
+                "laravel"
+            ],
+            "time": "2019-01-22T10:01:40+00:00"
         },
         {
             "name": "nesbot/carbon",
@@ -6565,7 +6610,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "nbj/cockroachdb-laravel": 15
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
